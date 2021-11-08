@@ -1,0 +1,298 @@
+
+body{
+    font-family: 'Mohave', sans-serif;
+    font-weight: bold;
+    }
+    
+    .inner_main_menu {
+        margin: 0% auto;
+        width:900px;
+    }
+    .inner_main_menu ul{
+        padding: 25px 0 0;
+        margin: 0%;
+        list-style: none;
+        text-align: right;
+    }
+    
+    .inner_main_menu ul li{
+      
+        float: none;
+        display: inline-block;
+        
+    }
+    .inner_main_menu ul li:nth-child(1){
+        float: left;
+    }
+    .inner_main_menu ul li:nth-child(2){
+        float: left;
+    }
+    .inner_main_menu ul li:nth-child(3){
+        float: left;
+    }
+    
+    .inner_main_menu ul li a{
+        color: black;
+        font-size: 15px;
+        text-transform: uppercase;
+        text-decoration:none;
+        display: block;
+        padding: 10px 20px;
+        
+        
+    }
+    
+    .inner_main_menu ul li a:hover{
+        color:chocolate;
+        
+    }
+    #main_main{
+        width: 100%;
+        position:relative;
+    
+    }
+    .logo{
+        width: 200px;
+        height: 10px;
+        position: absolute;
+        left:50%;
+        top:10px;
+        margin-left: -100px;
+        text-align: center;
+    
+    }
+    
+    .rooftop{
+        width: 100%;
+        height: 100%;
+    }
+    .logoo{
+    width: 70px;
+    height: 80px;
+    }
+
+        /* drop down menu code starts */
+
+        .sub_menu{
+            display: none;
+            
+        }
+        
+        .inner_main_menu ul li:hover .sub_menu{
+            display: block;
+            position: absolute;
+            margin-top: -4px;
+            margin-left: -30px;
+            background-color: white;
+           
+        }
+        
+        .inner_main_menu ul li:hover .sub_menu ul
+        {
+        display: block;
+        margin:0px;
+        text-align: center;
+        
+        }
+        .inner_main_menu ul li:hover .sub_menu ul li{
+            width:150px;
+           background: transparent;
+        }
+
+
+         /* drop down menu code ends*/
+
+
+.rooftopmenu{
+    border: 2px;
+    border-color: red;
+    font-weight: bold;
+
+}
+.h1menu{
+color: red;
+background-color: white;
+text-align: center;
+height: 5rem;
+padding-top:1.2rem;
+}
+
+.aboutus p{
+    color:red;
+}
+.aboutus{
+    text-align:center;
+    background-color: white;
+    /* background: linear-gradient( to right,rgb(26, 143, 71),#f00,#0f0,#0ff,#ff0,#0ff); */
+    width: 100%;
+    height: 90px;
+}
+
+.aboutus h1{
+  color:orangered;
+}
+
+/* footer code starts */
+.f{
+    /* border:2px solid blue; */
+    background-color: black;
+    width: 100;
+    height:250px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2px;
+  }
+  .fb{
+    border: 2px solid black;
+    width:30%;
+    height:250px;
+    text-align: center;
+    color:white;   
+  }
+  #ff{
+  font-size: 30px;
+  }
+  /* footer code ends */
+
+
+
+/* section code of contact us starts */
+
+.contactus{
+    width: 100%;
+    height:130vh;
+    /* background-image: url(restaurantimg/bg2.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: whitesmoke;
+    
+  }
+  .formabout{
+    background:rgb(241, 239, 241);
+    padding-top: 2rem;
+    margin:1rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem #333;
+    width:50vw;
+    height:70vh;
+  }
+  .inputBoxa{
+  position:relative;
+  text-align: center;
+  }
+  .inputa ,.textareaa{
+    outline: none;
+    border:0.2rem solid #333;
+    border-radius: .2rem;
+    margin:2rem 0;
+    padding:0 1rem;
+    background:none;
+    height:4rem;
+    width:90%;
+    font-size:2rem;
+  }
+  .textareaa:focus ~ h4,
+  .textareaa:valid ~ h4{
+    font-size: 1.6rem;
+    left:6%;
+    color:rgb(155, 49, 49);
+    top:-.5rem;
+  }
+  .inputa:focus ~ h4,
+  .inputa:valid ~ h4{
+    font-size: 1.6rem;
+    left:6%;
+    color:rgb(177, 45, 45);
+    top:-.5rem;
+  }
+  .textareaa{
+    padding:1rem;
+    resize:none;
+    height:6rem;
+  
+  }
+  h4{
+    position: absolute;
+    top:3rem;left: 7rem;
+  }
+  input[type="Submit"]{
+    height:2rem;
+    width:6rem;
+    border-radius: 0.6rem;
+    margin-bottom: 2rem;
+    margin-left:4%;
+    background:orange;
+    color: rgb(0, 0, 0);
+  }
+  
+  .inputasb:hover{
+    color:#333;
+    background:rgb(206, 203, 19);
+  }
+  .contactus-l{
+    width: 30%;
+    height:580px;
+    /* border: 2px solid blue; */
+    margin-top:-230px;
+    margin-left: 1200px;
+    background-image: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index:1;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    position: sticky;
+    border:0 4px 8px 0 rgba(182, 91, 16, 0.4),0 6px 20px 0 rgba(192, 108, 12, 0.986); 
+     
+  }
+  
+  
+  .loada{
+    animation: slide 2s;
+  }
+  .slidera{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width:100%;
+  height: 80vh;
+  animation: slidea 20s infinite ;
+  }
+  @keyframes slidea{
+  0%{
+  background-image: url(https://images.pexels.com/photos/618613/pexels-photo-618613.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  }
+  20%{
+  background-image: url(https://images.pexels.com/photos/618613/pexels-photo-618613.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  
+  }
+  20.01%{
+  background-image: url(https://images.pexels.com/photos/789822/pexels-photo-789822.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  }
+  40%{
+  background-image: url(https://images.pexels.com/photos/789822/pexels-photo-789822.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  }
+  40.01%{
+  background-image: url(https://images.pexels.com/photos/323503/pexels-photo-323503.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  }
+  60%{
+  background-image: url(https://images.pexels.com/photos/323503/pexels-photo-323503.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  }
+  60.01%{
+  background-image: url(https://images.pexels.com/photos/4226256/pexels-photo-4226256.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  }
+  80%{
+  background-image: url(https://images.pexels.com/photos/4226256/pexels-photo-4226256.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  }
+  80.01%{
+  background-image: url(https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  }
+  100%{
+  background-image: url(https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    }}
+  
+  
+  
+  
+  /* section code of contact us starts */

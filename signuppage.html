@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="loginpage.css">
+   <link rel="stylesheet" href="Home.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>SignUp</title>
+</head>
+
+<body>
+   <div class="bg-img">
+      <div class="content">
+         <header style="color: orange;"> SignUp </header>
+         <form action="#" onsubmit="return validate()">
+            <div class="field">
+               <span class="fa fa-user"></span>
+               <input type="text" required placeholder="Email or Phone">
+            </div>
+            <div class="field space">
+               <span class="fa fa-lock"></span>
+               <input type="password" class="pass-key" required placeholder="Password" id="password">
+               <span class="show">SHOW</span>
+            </div>
+            <div class="field space">
+               <span class="fa fa-lock"></span>
+               <input type="Conform Password" class="pass-key" required placeholder="Conform Password" id="conform_password" onkeyup="check(this)">
+               <error id="alert1"></error>
+               <span class="show">SHOW</span>
+            </div>
+            <br>
+            <div class="field">
+               <!-- <BUtton ><input type="submit" value="Create Account" id="submit" class="create"></BUtton> -->
+               <a href="Home.html" class="loginc" style="color: rgb(2, 2, 2);text-decoration: none;text-align: center;font-weight: bold;
+               text-align: center;"><b>SIGNUP</b></a>
+            </div>
+            <br>
+         </form>
+
+
+      </div>
+   </div>
+   <script>
+      // alert("are you sure")
+      const pass_field = document.querySelector('.pass-key');
+      const showBtn = document.querySelector('.show');
+      showBtn.addEventListener('click', function () {
+         if (pass_field.type === "password") {
+            pass_field.type = "text";
+            showBtn.textContent = "HIDE";
+            showBtn.style.color = "#3498db";
+         } else {
+            pass_field.type = "password";
+            showBtn.textContent = "SHOW";
+            showBtn.style.color = "#222";
+         }
+      });
+
+      var password = document.getElementById('password')
+      var flag=1; //1->no error 0->error
+      function check(elem){
+         if(elem.value.length>0)
+         {
+            if(elem.value!=password.value)
+            {
+               document.getElementById('alert1').innerText="conform password does not match";
+               flag=0;
+            }
+            else{
+               document.getElementById('alert1').innerText="";
+               flag=1;
+            }
+         }
+         else{
+            document.getElementById('alert1').innerText="please enter the conform password";
+            flag=0;
+         }
+      }
+
+      function validate(){
+            if(flag==1){
+               return true;
+            }else{
+               return false;
+            }
+         }
+
+
+   </script>
+
+   <!-- code of the fotter starts  -->
+   <div>
+      <div class="f">
+          <div class="fb">
+              <b>LINKS</b><br><br>
+              <a href="Home.html" style="color: white;text-decoration: none;">HOME </a><br><br>
+              <a href="" style="color: white;text-decoration: none;"> MENU</a> <br><br>
+              <a href="" style="color: white;text-decoration: none;"> ABOUT US </a> <br><br>
+              <a href="" style="color: white;text-decoration: none;"> CONTACT US</a> <br><br>
+          </div>
+
+          <div class="fb">
+              <b>ADDRESS</b><br> <br><br>
+              VIJAYAWADA <br>
+              KRISHNA DISTRICT <br>
+              2-1 OPP. ROTARY CLUB MAIN ROAD <br>
+              ANDHRA PRADESH <br><br>
+              <span class="fa fa-facebook" id="ff" style="color: blue"></span>&nbsp &nbsp &nbsp
+              <span class="fa fa-instagram" id="ff" style="color: rgb(240, 54, 95)"></span>&nbsp &nbsp &nbsp
+              <span class="fa fa-whatsapp" id="ff" style="color: green"></span>&nbsp &nbsp &nbsp
+              <span class="fa fa-youtube" id="ff" style="color: red"></span>&nbsp &nbsp &nbsp
+              <span class="fa fa-twitter" id="ff" style="color: rgb(0, 183, 255)"></span>&nbsp &nbsp &nbsp
+              <span class="fa fa-playstore" id="ff" style="color: rgb(0, 183, 255)"></span>&nbsp &nbsp &nbsp
+              <div class="footer_copyright">
+                  <p style="color: white;">Copyright &copy;2021 rooftop designed by <span>Yaswanth</span></p>
+              </div>
+          </div>
+
+          <div class="fb">
+              <b>LOCATION</b><br><br>
+              <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.855599274202!2d80.82319461468855!3d16.3813166886888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a36019431c63437%3A0x71523301551880ad!2sSri%20Datta%20Sai%20Rice%20%26%20General%20Store!5e0!3m2!1sen!2sin!4v1626513804064!5m2!1sen!2sin"
+                  width="100%" height="150px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+      </div>
+  </div>
+  <!-- footer codes ends -->
+
+</body>
+
+</html>
